@@ -11,6 +11,14 @@ import java.util.List;
 
 import static android.util.Log.*;
 
+
+/*
+Nama    : Siti Safira Nadifa
+NIM     : 10117904
+Kelas   : IF-6K
+Tanggal Pengerjaan : 01-05-2020
+ */
+
 public class MainActivity extends AppCompatActivity {
 
     private EntityActivity entityActivity;
