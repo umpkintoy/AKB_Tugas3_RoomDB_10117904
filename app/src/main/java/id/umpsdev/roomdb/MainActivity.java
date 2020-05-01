@@ -47,14 +47,14 @@ public class MainActivity extends AppCompatActivity {
         Log.d("TAMPIL", "Tampil seluruh data aktivitas");
         Log.d("TAMPIL", "=============================");
 
-        entityActivity = db.daoActivity().tampilSeluruhAktivis();
+        entityActivities =  db.daoActivity().tampilSeluruhAktivis();
 
-        for (int i = 0; i < entityActivity.size(); i++) {
+        for (int i = 0; i < entityActivities.size(); i++) {
 
             Log.d("TAMPIL", "Data Ke-" + (i + 1));
-            Log.d("TAMPIL", "Nama : " + entityActivity.get(i).getNamaAktivis());
-            Log.d("TAMPIL", "Email : " + entityActivity.get(i).getEmailAktivis());
-            Log.d("TAMPIL", "Zona : " + entityActivity.get(i).getZonaTugas());
+            Log.d("TAMPIL", "Nama : " + entityActivities.get(i).getNamaAktivis());
+            Log.d("TAMPIL", "Email : " + entityActivities.get(i).getEmailAktivis());
+            Log.d("TAMPIL", "Zona : " + entityActivities.get(i).getZonaTugas());
             Log.d("TAMPIL", "===========================");
 
         }
@@ -65,9 +65,9 @@ public class MainActivity extends AppCompatActivity {
         entityActivityListByZone = db.daoActivity().findByZone("Seoul");
         for (int i = 0; i < entityActivityListByZone.size(); i++) {
             Log.e("ZONE", "Data Aktivis Ke-" + (i + 1));
-            Log.d("ZONE", "Nama : " + entityActivity.get(i).getNamaAktivis());
-            Log.d("ZONE", "Email : " + entityActivity.get(i).getEmailAktivis());
-            Log.d("ZONE", "Zona : " + entityActivity.get(i).getZonaTugas());
+            Log.d("ZONE", "Nama : " + entityActivityListByZone.get(i).getNamaAktivis());
+            Log.d("ZONE", "Email : " + entityActivityListByZone.get(i).getEmailAktivis());
+            Log.d("ZONE", "Zona : " + entityActivityListByZone.get(i).getZonaTugas());
             Log.d("ZONE", "===========================");
 
         }
